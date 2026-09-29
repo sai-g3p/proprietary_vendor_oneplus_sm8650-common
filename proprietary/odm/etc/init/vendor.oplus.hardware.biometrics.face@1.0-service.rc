@@ -5,6 +5,7 @@ service face_hal /odm/bin/hw/vendor.oplus.hardware.biometrics.face@1.0-service
     class late_start
     user system
     group system input
+    task_profiles ProcessCapacityHigh MaxPerformance
 
 on post-fs-data
     mkdir /data/vendor_de/0/facedata 0770 system system encryption=None
