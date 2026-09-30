@@ -1057,7 +1057,6 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1 \
     libprotobuf-cpp-lite-3.9.1 \
     libsecurity_event_olc_vnd \
-    vendor.oplus.hardware.oplusSensor-V1-ndk \
     vendor.qti.hardware.soter@1.0 \
     com.google.android.widevine.nonupdatable \
     CACertService \
