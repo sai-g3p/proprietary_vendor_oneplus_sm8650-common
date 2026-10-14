@@ -2986,23 +2986,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "liblocation_qesdk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblocation_qesdk.so"],
-			shared_libs: ["libutils", "libcutils", "libgps.utils", "libcdfw", "liblog", "liblocation_api", "libloc_core", "libloc_mq_client", "libloc_base_util", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "liblocationservice",
 	owner: "oneplus",
 	strip: {
@@ -4570,57 +4553,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libqesdk2_0",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqesdk2_0.so"],
-			shared_libs: ["liblog", "libjsoncpp", "libcutils", "libbase", "libutils", "libhidlbase", "vendor.qti.qesdhal@1.0", "vendor.qti.qesdhal@1.1", "vendor.qti.qesdhal@1.2", "vendor.qti.qesdhal@1.3", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqesdk_manager",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqesdk_manager.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcrypto", "libjsoncpp", "libminkdescriptor", "libminksocket_vendor", "libqcbor", "libbinder", "libbinder_ndk", "vendor.qti.qesdsys-V4-ndk", "libprotobuf-cpp-lite-21.7", "libqesdoem_query_sys", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqesdoem_query_sys",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqesdoem_query_sys.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libjsoncpp", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libqisl",
 	owner: "oneplus",
 	strip: {
@@ -4817,23 +4749,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqmiservices.so"],
 			shared_libs: ["libidl", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqms",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqms.so"],
-			shared_libs: ["libselinux", "libdiag", "liblog", "libutils", "libcutils", "libjsoncpp", "libqesdk2_0", "libbinder", "libbase", "libcrypto", "libnl", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -6232,42 +6147,6 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libvui_dmgr",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libvui_dmgr.so"],
-			shared_libs: ["liblog", "libcutils", "libqesdk2_0", "libjsoncpp", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libvui_dmgr_client",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libvui_dmgr_client.so"],
-			shared_libs: ["liblog", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -9245,142 +9124,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.qti.qesdhal-impl",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.qesdhal-impl.so"],
-			shared_libs: ["libbase", "libutils", "vendor.qti.qesdhalaidl-V2-ndk", "liblog", "libcutils", "libcrypto", "libjsoncpp", "libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.qesdhal@1.0",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.qesdhal@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.qesdhal@1.1",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.qesdhal@1.1.so"],
-			shared_libs: ["vendor.qti.qesdhal@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.qesdhal@1.2",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.qesdhal@1.2.so"],
-			shared_libs: ["vendor.qti.qesdhal@1.0", "vendor.qti.qesdhal@1.1", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.qesdhal@1.3",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.qesdhal@1.3.so"],
-			shared_libs: ["vendor.qti.qesdhal@1.0", "vendor.qti.qesdhal@1.1", "vendor.qti.qesdhal@1.2", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.qesdhalaidl-V2-ndk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.qesdhalaidl-V2-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.qesdsys-V3-ndk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.qesdsys-V3-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.qesdsys-V4-ndk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.qesdsys-V4-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.qti.qspmhal-V1-ndk",
 	owner: "oneplus",
 	strip: {
@@ -11061,15 +10804,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "qesdk-manager.xml",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/qesdk-manager.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "qms-saidl.xml",
 	owner: "oneplus",
 	src: "proprietary/vendor/etc/vintf/manifest/qms-saidl.xml",
@@ -12234,23 +11968,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/qcc-vendor"],
 			shared_libs: ["libbinder_shim", "libcutils", "liblog", "libutils", "libprotobuf-cpp-lite-21.7", "libqcc_file_agent", "libqcc_sdk", "libqmi_cci", "libqmiservices", "libidl", "libz", "libbase", "libfmq", "libhidlbase", "libbinder", "libbinder_ndk", "android.hardware.common-V2-ndk", "vendor.qti.qccvndhal_aidl-V1-ndk_vendor", "vendor.qti.qccvndhal_aidl-halimpl", "vendor.qti.hardware.qccsyshal@1.2_vendor", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "qesdk-manager",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/qesdk-manager"],
-			shared_libs: ["libqesdk_manager", "vendor.qti.qesdhal-impl", "libhidlbase", "liblog", "libutils", "libavservices_minijail", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
