@@ -11002,15 +11002,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_oplus_fingerprint_aidl_v3.xml",
-	owner: "oneplus",
-	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl_v3.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	device_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "manifest_touch_aidl.xml",
 	owner: "oneplus",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_touch_aidl.xml",
@@ -12703,24 +12694,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.face@1.0-service"],
 			shared_libs: ["libbase_shim", "libbinder", "liblog", "libhidlbase", "libhidltransport", "libcutils", "libhardware", "libutils", "libbase", "libcamera2ndk_vendor", "libmediandk", "libnativewindow", "libui", "libbinder_ndk", "libdmabufheap", "android.hardware.biometrics.face-V3-ndk", "android.hardware.biometrics.common-V3-ndk", "vendor.oplus.hardware.osense.client-V1-ndk", "android.hardware.keymaster-V4-ndk", "libosenseaidlhalclient", "vendor.oplus.hardware.commondcs-V1-ndk", "libstfaceunlockocl", "libion", "libQSEEComAPI", "libsensorndkbridge", "libolc_vnd", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	device_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff"],
-			shared_libs: ["libshims_aidl_fingerprint_v3.oplus", "libdmabufheap", "vendor.oplus.hardware.performance-V1-ndk", "vendor.oplus.hardware.osense.client-V1-ndk", "libosenseaidlhalclient", "liboplus-uah-client", "libosensenativeproxy_client", "libolc_vnd", "vendor.oplus.hardware.commondcs-V1-ndk", "android.frameworks.stats-V1-ndk", "vendor.oplus.hardware.touch-V1-ndk", "android.hardware.biometrics.fingerprint-V3-ndk", "android.hardware.biometrics.common-V3-ndk", "libbinder", "liblog", "libhidlbase", "libhidltransport", "libcutils", "libbinder_ndk", "libQSEEComAPI", "libion", "libbase", "libsensorndkbridge", "libhardware", "libutils", "libtinyxml2_stock", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",

@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor-oplus-hardware-oplusSensor-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-oplusSensor-V1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.face@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.face@1.0-service.rc \
-    vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V11-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V11-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
@@ -1111,7 +1110,6 @@ PRODUCT_PACKAGES += \
     manifest_oplusSensor_aidl.xml \
     manifest_oplus_charger_aidl.xml \
     manifest_oplus_face.xml \
-    manifest_oplus_fingerprint_aidl_v3.xml \
     manifest_touch_aidl.xml \
     ATFWD-daemon \
     adpl \
@@ -1218,7 +1216,6 @@ PRODUCT_PACKAGES += \
     vendor-oplus-hardware-oplusSensor-V1-service \
     vendor-oplus-hardware-touch-V2-service \
     vendor.oplus.hardware.biometrics.face@1.0-service \
-    vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor.oplus.hardware.charger-V11-service \
     wlschgd \
     init.oplus.wifi \
