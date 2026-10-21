@@ -11001,15 +11001,6 @@ prebuilt_etc_xml {
 	device_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "manifest_touch_aidl.xml",
-	owner: "oneplus",
-	src: "proprietary/odm/etc/vintf/manifest/manifest_touch_aidl.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	device_specific: true,
-}
-
 cc_prebuilt_binary {
 	name: "ATFWD-daemon",
 	owner: "oneplus",
@@ -12670,24 +12661,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "vendor-oplus-hardware-touch-V2-service",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/bin/hw/vendor-oplus-hardware-touch-V2-service"],
-			shared_libs: ["libolc_vnd", "android.frameworks.stats-V1-ndk", "vendor.oplus.hardware.touch-V2-ndk", "libbase", "libcutils", "liblog", "libbinder_ndk", "libutils", "libhardware", "libbinder", "libtinyxml2_stock", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	device_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "vendor.oplus.hardware.biometrics.face@1.0-service",
 	owner: "oneplus",
 	target: {
@@ -12756,40 +12729,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/odm/bin/oplus_sensor_fb"],
 			shared_libs: ["liblog", "libsnsapi", "libqsh", "libutils", "libcutils", "liboplus_service", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "touchDaemon",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/bin/touchDaemon"],
-			shared_libs: ["libolc_vnd", "vendor.oplus.hardware.touch-V2-ndk", "android.frameworks.stats-V1-ndk", "libcutils", "liblog", "libbase", "libbinder", "libcrypto", "libhwbinder", "libutils", "libbinder_ndk", "libtinyxml2_stock", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "touchHidlTest",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/bin/touchHidlTest"],
-			shared_libs: ["vendor.oplus.hardware.touch-V2-ndk", "libcutils", "liblog", "libbase", "libhidlbase", "libhidltransport", "libhwbinder", "libhardware", "libutils", "libbinder_ndk", "libbinder", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
