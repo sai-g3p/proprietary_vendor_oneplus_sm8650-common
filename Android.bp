@@ -10975,15 +10975,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_oplusSensor_aidl.xml",
-	owner: "oneplus",
-	src: "proprietary/odm/etc/vintf/manifest/manifest_oplusSensor_aidl.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	device_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "manifest_oplus_charger_aidl.xml",
 	owner: "oneplus",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_charger_aidl.xml",
@@ -12625,84 +12616,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "gauged",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/bin/hw/gauged"],
-			shared_libs: ["libcutils", "liblog", "libbase", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	device_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vendor-oplus-hardware-oplusSensor-V1-service",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/bin/hw/vendor-oplus-hardware-oplusSensor-V1-service"],
-			shared_libs: ["vendor.oplus.hardware.oplusSensor-V1-ndk", "libbase", "libcutils", "libdumpstateutil", "liblog", "libbinder_ndk", "libutils", "libhardware", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	device_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "vendor.oplus.hardware.biometrics.face@1.0-service",
 	owner: "oneplus",
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.face@1.0-service"],
 			shared_libs: ["libbase_shim", "libbinder", "liblog", "libhidlbase", "libhidltransport", "libcutils", "libhardware", "libutils", "libbase", "libcamera2ndk_vendor", "libmediandk", "libnativewindow", "libui", "libbinder_ndk", "libdmabufheap", "android.hardware.biometrics.face-V3-ndk", "android.hardware.biometrics.common-V3-ndk", "vendor.oplus.hardware.osense.client-V1-ndk", "android.hardware.keymaster-V4-ndk", "libosenseaidlhalclient", "vendor.oplus.hardware.commondcs-V1-ndk", "libstfaceunlockocl", "libion", "libQSEEComAPI", "libsensorndkbridge", "libolc_vnd", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	device_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vendor.oplus.hardware.charger-V11-service",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/bin/hw/vendor.oplus.hardware.charger-V11-service"],
-			shared_libs: ["libcutils", "libhidlbase", "libbinder_ndk", "liblog", "libutils", "libbase", "libbinder", "android.frameworks.sensorservice@1.0", "android.hardware.sensors@1.0", "libsensorndkbridge", "libm", "vendor.oplus.hardware.charger-V11-ndk", "vendor.oplus.hardware.osense.client-V1-ndk", "libosenseaidlhalclient", "libjsoncpp", "libGaiaClient_vnd", "libc++", "libc", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	device_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "wlschgd",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/bin/hw/wlschgd"],
-			shared_libs: ["libcutils", "liblog", "libc", "libbase", "libc++", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
